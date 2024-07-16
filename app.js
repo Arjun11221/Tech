@@ -101,12 +101,11 @@
 // Need ?? 
 
 
-const URL = "https://jsonplaceholder.typicode.com/users";
+// const URL = "https://jsonplaceholder.typicode.com/users";
 
-const data = fetch(URL);
+// const data = fetch(URL);
 
-console.log(data);   // return Promise => pending state
-
+// console.log(data);   // return Promise => pending state
 
 // fetch() => Web Api => use => to make Api Call
 
@@ -130,3 +129,26 @@ console.log(data);   // return Promise => pending state
 
 
 // HomeWork  => Promise Chaining 
+
+
+
+
+// async and await 
+
+// async => async is a keyword which use before the function declaration.
+// async => return a promise
+
+// await => Promise => pending => solve => use await
+
+const foo = async ()=>{
+    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.76922849999999&lng=77.25919379999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+    // data is not in the form of readable
+    const res = await data.json();
+    console.log(res);
+    
+}
+
+foo();
+
+// json => like a Object => {data}
+
