@@ -145,10 +145,16 @@ const foo = async ()=>{
     // data is not in the form of readable
     const res = await data.json();
     console.log(res);
-    
 }
 
 foo();
 
 // json => like a Object => {data}
 
+// 70% => js complete
+
+// HomeWork
+// 1) DOM => Selecting Elements, Modifying and Events
+
+const heading2 = document.getElementById("head");
+console.log(heading2);
